@@ -28,7 +28,7 @@ nav a {
         display: inline-block;
 }
 nav a:hover {
-        background-color: #7c094c(168, 8, 102, 0.561);
+        background-color: #7c094c;
         text-decoration: underline;
 }
 
