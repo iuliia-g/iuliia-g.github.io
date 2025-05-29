@@ -5,7 +5,7 @@ body {
     background-color: #f4f4f4;
 }    
 header {
-        background-color: #a70b66b7;
+        background-color: #000000;
         color: rgb(255, 255, 255);
         padding: 40px 20px;
         text-align: center;
@@ -15,7 +15,7 @@ h2 {
         text-align: center;
 }
 nav {
-        background: #a70b6675;
+        background: #7c094c;
         padding: 10px 0;
         text-align: center;       
 
@@ -28,7 +28,7 @@ nav a {
         display: inline-block;
 }
 nav a:hover {
-        background-color: rgba(168, 8, 102, 0.561);
+        background-color: #7c094c(168, 8, 102, 0.561);
         text-decoration: underline;
 }
 
@@ -57,4 +57,11 @@ img{
     justify-content: center;
     margin: 40px auto;
     padding: 20px;        
+}
+footer {
+        background-color: #7c094c;
+        color: white;           
+        text-align: center;
+        padding: 1em;
+        margin-top: 2em;
 }
