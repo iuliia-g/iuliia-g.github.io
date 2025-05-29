@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruosteinen Rauta Oy</title>  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="tyyli.css" />
+</head>
+
+<body>
+  <header class="header-section">
+    <h2>🍰 Tervetuloa Pullan ja Kakkuun! 🍰</h2>
+    <p>Meiltä löydät herkullisia leivonnaisia ja erikoiskahveja!</p>
+  </header>    
+ 
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Pulla ja Kakku</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Etusivu</a></li>
+      
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tuotteet
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pulla.html">Pulla</a></li>
+          <li><a href="kahvi.html">Kahvi</a></li>
+          <li><a href="kakku.html">Kakku</a></li>
+        </ul>
+      </li>
+      <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+    </ul>
+  </div>
+  </nav>
+
+  <section class="container py-5">
+    <h3><b>Ota yhteyttä</b></h3><br>
+    <p><b>Osoite:</b> Pullankatu 42, Helsinki</p>
+    <p><b>Puhelin:</b> +358 122 334 556</p>
+    <p><b>Sähköposti:</b> info@pullajakakku.com</p>
+    <br>
+
+    <form id="contactForm" class="mt-4">
+  <div class="mb-3">
+    <label for="name" class="form-label">Nimi</label>
+    <input type="text" class="form-control" id="name" name="name" required>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Sähköposti</label>
+    <input type="email" class="form-control" id="email" name="email" required>
+  </div>
+  <div class="mb-3">
+    <label for="message" class="form-label">Viesti</label>
+    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Lähetä</button>
+  <button type="reset" class="btn btn-secondary">Tyhjennä</button>
+</form>
+
+<!-- JavaScript to replace php form --> 
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    
+    const data = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value
+    };
+
+    localStorage.setItem("formData", JSON.stringify(data));
+    window.location.href = "lahetetty.html"; // Go to confirmation page
+  });
+</script>
+
+  <footer class="footer">
+    <p>🍰 &copy; 2025 Pulla ja Kakku. All rights reserved. 🍰</p>
+  </footer>
+</body>
+</html>

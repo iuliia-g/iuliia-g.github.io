@@ -1,0 +1,208 @@
+/* Base Layout */
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Barlow, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Allow main content to grow and push footer down */
+main.flex-grow-1 {
+  flex: 1 0 auto;
+}
+
+/* Typography */
+p {
+  color: #054065;
+  font-size: 1.1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: bold;
+  color: #086BA8;
+  font-family: Barlow, sans-serif;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #086BA8;
+  font-family: Barlow, sans-serif;
+  margin-bottom: 1rem;
+}
+
+h3, h3.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #086BA8;
+  font-family: Barlow, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  font-size: 56px;
+  font-weight: bold;
+  color: #086BA8;
+  font-family: Barlow, sans-serif;
+  margin-bottom: 1rem;
+}
+
+/* Custom Background Colors */
+.bg-custom {
+  background-color: #AD4900 !important;
+  color: white !important;
+}
+
+footer.bg-custom {
+  background-color: #054065 !important;
+  flex-shrink: 0;
+  padding: 1rem 0;
+}
+
+footer.bg-custom,
+footer.bg-custom * {
+  color: white !important;
+  text-align: center;
+}
+
+/* Navbar Logo Size */
+.navbar-brand img {
+  max-height: 40px;
+  width: auto;
+}
+
+/* Card Styling */
+.card.h-100 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Image Styling */
+.rounded {
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Section Spacing and Text */
+section.container p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #054065;
+  text-align: justify;
+}
+
+section.container {
+  margin-bottom: 3rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .rounded {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  section.container.py-3,
+  section.container.py-5 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Contact form */
+form {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*BUTTON STYLING*/
+/* Generic button reset */
+button,
+.btn {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Custom button - orange */
+.btn-custom,
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom:visited {
+  background-color: #AD4900 !important;
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #993F00 !important;
+}
+
+.btn-custom:active {
+  background-color: #7A3000 !important;
+}
+
+/* Contact form button - blue */
+.btn-contact,
+.btn-contact:hover,
+.btn-contact:focus,
+.btn-contact:active,
+.btn-contact:visited {
+  background-color: #086BA8 !important;
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+  background-color: #054065 !important;
+}
+
+.btn-contact:active {
+  background-color: #032C4F !important;
+}
+*:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
