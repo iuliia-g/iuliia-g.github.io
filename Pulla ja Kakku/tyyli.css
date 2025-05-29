@@ -35,8 +35,8 @@ body {
   font-size: small;
 }
 .button-space {
-  margin-top: 50px;
-  margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 /* Responsive tweaks for small screens */
