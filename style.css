@@ -73,9 +73,11 @@ img{
   margin: 10px 0;
 }
 .project-card img {
-  width: 100%;
-  max-width: 600px;  
-  border-radius: 8px; 
-  object-fit: cover;
-  margin: 10px 0;
+  display: block;          /* makes the image a block element */
+  margin: 15px auto;       /* centers the image horizontally */
+  width: 90%;              /* make it scale nicely */
+  max-width: 600px;        /* prevents images from getting too large */
+  height: auto;            /* keeps proportions */
+  border-radius: 8px;      /* soft rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* subtle shadow for depth */
 }
