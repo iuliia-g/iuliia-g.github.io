@@ -207,3 +207,20 @@ button,
   outline: none !important;
 }
 
+/* Fullscreen background video */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* keeps it behind everything */
+  filter: brightness(60%); /* optional dark overlay for readability */
+}
+
+/* Optional: make text stand out better */
+section, nav, footer {
+  position: relative;
+  z-index: 1;
+}
