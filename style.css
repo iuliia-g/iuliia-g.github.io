@@ -71,6 +71,13 @@ img {
     display: block;
 }
 
+.about img {
+    margin: 0;
+    width: 220px;
+    height: 220px;
+    flex-shrink: 0;
+}
+
 .about {
     display: flex;
     align-items: center;
