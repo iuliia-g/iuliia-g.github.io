@@ -235,6 +235,36 @@ footer {
     color: #555;
 }
 
+/* ===== Gallery  ===== */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+details {
+    margin-top: 10px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 /* ===== Mobile ===== */
 
 @media (max-width: 768px) {
