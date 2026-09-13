@@ -236,22 +236,32 @@ footer {
 }
 
 /* ===== Gallery  ===== */
+.project-gallery .gallery-slide img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    display: block;
+}
 
 .project-gallery {
     position: relative;
     width: 100%;
-    max-width: 900px;
+    max-width: 700px;
     margin: 30px auto;
     overflow: hidden;
 }
 
-.gallery-slide {
-    display: none;
+.project-gallery .gallery-slide {
+    display: none !important;
     text-align: center;
 }
 
-.gallery-slide.active {
-    display: block;
+.project-gallery .gallery-slide.active {
+    display: block !important;
 }
 
 .gallery-slide img {
