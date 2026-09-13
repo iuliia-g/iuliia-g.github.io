@@ -1,5 +1,4 @@
 /* ===== Global Styles ===== */
-
 html {
     scroll-behavior: smooth;
 }
@@ -15,7 +14,6 @@ body {
 }
 
 /* ===== Header ===== */
-
 header {
     background-color: #000;
     color: #fff;
@@ -35,7 +33,6 @@ header p {
 }
 
 /* ===== Navigation ===== */
-
 nav {
     background: #7c094c;
     padding: 10px 0;
@@ -59,7 +56,6 @@ nav a:hover {
 }
 
 /* ===== Sections ===== */
-
 section {
     max-width: 1200px;
     margin: 40px auto;
@@ -91,7 +87,6 @@ li {
 }
 
 /* ===== About Section ===== */
-
 img {
     width: 200px;
     height: 200px;
@@ -121,7 +116,6 @@ img {
 }
 
 /* ===== Job Section ===== */
-
 .job {
     margin-bottom: 50px;
 }
@@ -144,7 +138,6 @@ img {
 }
 
 /* ===== Education ===== */
-
 .education-item {
     margin-bottom: 25px;
 }
@@ -170,7 +163,6 @@ img {
 }
 
 /* ===== Projects Grid ===== */
-
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -228,13 +220,23 @@ img {
 }
 
 /* ===== Footer ===== */
-
 footer {
     text-align: center;
     padding: 25px;
     color: #555;
 }
 
+/* ===== Project links ===== */
+.project-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project-links a {
+    display: inline-block;
+}
 
 /* ===== Mobile ===== */
 
