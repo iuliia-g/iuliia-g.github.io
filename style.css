@@ -199,7 +199,7 @@ img {
 
 .project-card h3 {
     margin: 10px 0;
-    color: #7c094c;
+    color: #478F45;
     font-size: 1.4rem;
 }
 
@@ -212,16 +212,16 @@ img {
 .project-card a {
     display: inline-block;
     padding: 8px 14px;
-    background: #7c094c;
+    background: #5AB257;
     color: white;
     border-radius: 6px;
     text-decoration: none;
     font-size: 0.95rem;
-    transition: background 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .project-card a:hover {
-    background: #5a0738;
+    background-color: #478F45;
 }
 
 /* ===== Footer ===== */

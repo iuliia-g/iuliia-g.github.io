@@ -103,45 +103,12 @@
       <a href="Pandas/index.html" target="_blank">🔗 Live Demo</a>
     </div>
 
-    </div>
   </div>
 </section>
 <footer style="text-align: center;">
         <p>&copy;2026 Iuliia Grishko | Made with 💻 and 🍩</p>
 </footer>
 
-<!-- JS for the gallery -->
-
-<script>
-let currentSlide = 0;
-const slides = document.querySelectorAll(".gallery-slide");
-const slideNumber = document.getElementById("slide-number");
-
-function showSlide(index) {
-
-    if (index >= slides.length) {
-        currentSlide = 0;
-    } else if (index < 0) {
-        currentSlide = slides.length - 1;
-    } else {
-        currentSlide = index;
-    }
-
-    slides.forEach(slide => {
-        slide.classList.remove("active");
-    });
-
-    slides[currentSlide].classList.add("active");
-
-    slideNumber.textContent = currentSlide + 1;
-}
-
-function changeSlide(direction) {
-    showSlide(currentSlide + direction);
-}
-
-showSlide(0);
-</script>
       
 </body>
 </html>
