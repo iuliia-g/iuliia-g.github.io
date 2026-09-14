@@ -34,7 +34,7 @@ header p {
 
 /* ===== Navigation ===== */
 nav {
-    background: red;
+    background: #23262C;
     padding: 10px 20px;
     text-align: center;
     display: flex;
@@ -202,7 +202,7 @@ img {
 
 .project-card h3 {
     margin: 10px 0;
-    color: #23262C;
+    color: red;
     font-size: 1.4rem;
 }
 
