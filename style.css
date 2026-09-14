@@ -34,25 +34,30 @@ header p {
 
 /* ===== Navigation ===== */
 nav {
-    background: #7c094c;
-    padding: 10px 0;
+    background: #5AB257;
+    padding: 10px 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 nav a {
     color: white;
-    margin: 0 15px;
+    margin: 0;
     text-decoration: none;
-    padding: 8px 14px;
+    padding: 8px 12px;
     display: inline-block;
     border-radius: 6px;
-    transition: background 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
     font-size: 1.1rem;
 }
 
 nav a:hover {
-    background-color: #5a0738;
-    text-decoration: none;
+    background-color: #478F45;
+    color: white;
 }
 
 /* ===== Sections ===== */
@@ -253,10 +258,17 @@ footer {
         padding: 25px;
     }
 
+    nav {
+        flex-direction: column;
+        gap: 3px;
+    }
+
     nav a {
         display: block;
-        margin: 5px 0;
+        width: 100%;
+        margin: 0;
     }
+
 
     header h1 {
         font-size: 2rem;
