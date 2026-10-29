@@ -246,6 +246,18 @@ footer {
     display: inline-block;
 }
 
+/* ===== Project video ===== */
+.project-video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #000;
+}
+
 /* ===== Mobile ===== */
 
 @media (max-width: 768px) {
